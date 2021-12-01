@@ -3,6 +3,7 @@ package ru.geekbrains.context;
 public class Product {
     private Long id;
     private String title;
+    private Long cost;
 
     public Long getId() {
         return id;
@@ -20,13 +21,14 @@ public class Product {
         this.title = title;
     }
 
-    public Product(Long id, String title) {
+    public Product(Long id, String title, Long cost) {
         this.id = id;
         this.title = title;
+        this.cost = cost;
     }
 
     @Override
     public String toString() {
-        return id + " " + title;
+        return id + " " + title + " " + cost;
     }
 }
